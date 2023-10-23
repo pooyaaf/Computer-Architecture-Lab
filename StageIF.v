@@ -5,7 +5,7 @@ module StageIF (
     output reg [31:0] pc, instruction
 );
 
-    assign {branchTaken, freeze} = 2'b00; 
+    assign {branchTaken, freeze,clr} = 3'b000; 
     assign branchAddr = 32'd0; 
     wire [31:0] pcRegOut, lastPc, pcAdderOut, instructionOut;
 
@@ -21,6 +21,7 @@ module StageIF (
         .rst(rst),
         .in(lastPc),
         .ld(~freeze),
+        .clr(clr),
         .out(pcRegOut)
     );
 

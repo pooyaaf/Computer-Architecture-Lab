@@ -1,376 +1,6 @@
-# Compile of StageIF.v failed with 1 errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v failed with 1 errors.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of StageIF.v failed with 1 errors.
-# Compile of StageIF.v was successful.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# 6 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# 10 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of PC.v was successful.
-# 12 compiles, 1 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of PC.v was successful.
-# Compile of Register.v was successful.
-# 13 compiles, 1 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of PC.v was successful.
-# Compile of Register.v was successful.
-# 13 compiles, 1 failed with no errors.
-# Error opening F:\University_terms\term 9\CALab\Projects\ARM\MUX.v
-# Path name 'F:\University_terms\term 9\CALab\Projects\ARM\MUX.v' doesn't exist.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of PC.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# 15 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# 15 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# 16 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# 16 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v failed with 1 errors.
-# 17 compiles, 1 failed with 1 error.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v failed with 1 errors.
-# 17 compiles, 1 failed with 1 error.
-# Compile of TB.v failed with 1 errors.
-# Compile of TB.v was successful.
 vsim -gui work.TB
 # vsim -gui work.TB 
-# Start time: 15:46:12 on Oct 16,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'pc'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instruction'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'in'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/Register.v(5).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/PC_Reg File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 20
-# Error loading design
-# End time: 15:46:12 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 44
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:48:05 on Oct 16,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'pc'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instruction'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'inst'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/Inst_Mem File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 28
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'out'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/PC_Adder File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 33
-# Error loading design
-# End time: 15:48:06 on Oct 16,2023, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 2
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:50:32 on Oct 16,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'pc'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instruction'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'inst'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/Inst_Mem File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 28
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'out'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/PC_Adder File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 33
-# Error loading design
-# End time: 15:50:32 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 2
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:52:10 on Oct 16,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'pc'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instruction'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'inst'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF/Inst_Mem File: F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v Line: 27
-# Error loading design
-# End time: 15:52:11 on Oct 16,2023, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 1
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# 17 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:53:03 on Oct 16,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'pc'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instruction'.
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/IF File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 5
-# Error loading design
-# End time: 15:53:04 on Oct 16,2023, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 3
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# 17 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:53:45 on Oct 16,2023
+# Start time: 13:26:50 on Oct 23,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -383,26 +13,25 @@ run -all
 # ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(18)
 #    Time: 10100 ns  Iteration: 0  Instance: /TB
 # Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 18
-add wave -position insertpoint sim:/TB/top/IF/PC_Reg/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(18)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 18
-add wave -position insertpoint sim:/TB/top/IF/PC_Adder/*
-add wave -position insertpoint sim:/TB/top/IF/PC_Mux/*
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(18)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 18
+# Compile of ARM.v was successful.
+# Compile of StageIF.v failed with 1 errors.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# 17 compiles, 1 failed with 1 error.
+# Compile of StageIF.v was successful.
 # Compile of ARM.v was successful.
 # Compile of StageIF.v was successful.
 # Compile of StageID.v was successful.
@@ -421,8 +50,11 @@ run -all
 # Compile of Top.v was successful.
 # Compile of TB.v was successful.
 # 17 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+vsim -gui work.TB
+# End time: 13:48:32 on Oct 23,2023, Elapsed time: 0:21:42
+# Errors: 0, Warnings: 4
+# vsim -gui work.TB 
+# Start time: 13:48:32 on Oct 23,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -430,13 +62,14 @@ restart
 # Loading work.Register
 # Loading work.InstructionMemory
 # Loading work.Adder
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(18)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 18
+# Loading work.RegIFID
+# ** Error: (vsim-3063) Port 'instructionIF' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top File: F:/University_terms/term 9/CALab/Projects/ARM/TB.v Line: 7
+# ** Error: (vsim-3063) Port 'pcout' not found in the connected module (7th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/regIFID File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 18
+# Error loading design
+# End time: 13:48:32 on Oct 23,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
 # Compile of ARM.v was successful.
 # Compile of StageIF.v was successful.
 # Compile of StageID.v was successful.
@@ -453,7 +86,12 @@ run -all
 # Compile of MUX4to1.v was successful.
 # Compile of InstructionMemory.v was successful.
 # Compile of Top.v was successful.
-restart
+# Compile of TB.v failed with 1 errors.
+# 17 compiles, 1 failed with 1 error.
+# Compile of TB.v was successful.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 13:50:09 on Oct 23,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -461,14 +99,44 @@ restart
 # Loading work.Register
 # Loading work.InstructionMemory
 # Loading work.Adder
+# Loading work.RegIFID
+# ** Error: (vsim-3063) Port 'pcout' not found in the connected module (7th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/regIFID File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 18
+# Error loading design
+# End time: 13:50:10 on Oct 23,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
 # Compile of TB.v was successful.
 # 17 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 13:51:16 on Oct 23,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+add wave -position insertpoint sim:/TB/*
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(18)
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(21)
 #    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 18
-# End time: 15:59:09 on Oct 16,2023, Elapsed time: 0:05:24
-# Errors: 0, Warnings: 2
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 21
+add wave -position insertpoint sim:/TB/top/regIFID/*

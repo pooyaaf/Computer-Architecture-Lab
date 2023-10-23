@@ -2,13 +2,16 @@
 module TB();
     reg clk = 1'b0, rst = 1'b0;
     wire [31:0] pc, instruction;
-    
+
     Top top(
         .clk(clk),
         .rst(rst),
         .pc(pc),
         .instruction(instruction)
+      
     );
+
+
     
     initial begin
         #50 rst = 1'b1;
