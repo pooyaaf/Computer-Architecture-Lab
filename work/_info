@@ -10,7 +10,7 @@ z2
 cModel Technology
 dF:/University_terms/term 6/DLD_LAB/4/code
 vAdder
-Z0 !s110 1698056465
+Z0 !s110 1698063707
 !i10b 1
 !s100 fhY5^QEcJUXCn]n:7UB[b1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 dF:/University_terms/term 9/CALab/Projects/ARM
 w1697458806
 8F:/University_terms/term 9/CALab/Projects/ARM/Adder.v
 FF:/University_terms/term 9/CALab/Projects/ARM/Adder.v
-!i122 177
+!i122 217
 L0 1 8
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1698056465.000000
+Z5 !s108 1698063707.000000
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/Adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/Adder.v|
 !i113 1
@@ -34,7 +34,7 @@ Z6 o-work work
 Z7 tCvgOpt 0
 n@adder
 vARM
-Z8 !s110 1698056464
+Z8 !s110 1698063705
 !i10b 1
 !s100 8VW::I56nE1Pf5_Bg5D3i0
 R1
@@ -44,21 +44,69 @@ R3
 w1697458189
 8F:/University_terms/term 9/CALab/Projects/ARM/ARM.v
 FF:/University_terms/term 9/CALab/Projects/ARM/ARM.v
-!i122 173
+!i122 213
 L0 1 269
 R4
 r1
 !s85 0
 31
-Z9 !s108 1698056464.000000
+Z9 !s108 1698063705.000000
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/ARM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/ARM.v|
 !i113 1
 R6
 R7
 n@a@r@m
+vConditionCheck
+Z10 !s110 1698063708
+!i10b 1
+!s100 GPQjgLbUN7NZ9;PzTjX1P0
+R1
+IG]d3g:=g^jPgnnJeWF:gI2
+R2
+R3
+w1698060532
+8F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v
+FF:/University_terms/term 9/CALab/Projects/ARM/condition_check.v
+!i122 226
+L0 1 30
+R4
+r1
+!s85 0
+31
+Z11 !s108 1698063708.000000
+!s107 F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v|
+!i113 1
+R6
+R7
+n@condition@check
+vControlUnit
+R10
+!i10b 1
+!s100 f9]>9WoIJ?=?N<;Cg=^Pm1
+R1
+IYMJfXeiPF[OFEgFGPRYD=1
+R2
+R3
+w1698060356
+8F:/University_terms/term 9/CALab/Projects/ARM/control_unit.v
+FF:/University_terms/term 9/CALab/Projects/ARM/control_unit.v
+!i122 225
+L0 2 47
+R4
+r1
+!s85 0
+31
+R11
+!s107 F:/University_terms/term 9/CALab/Projects/ARM/control_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/control_unit.v|
+!i113 1
+R6
+R7
+n@control@unit
 vInstructionMemory
-Z10 !s110 1698056466
+R10
 !i10b 1
 !s100 adJL:72ekIgK_D0ENBBmo2
 R1
@@ -68,13 +116,13 @@ R3
 w1697459351
 8F:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v
 FF:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v
-!i122 181
+!i122 221
 L0 1 16
 R4
 r1
 !s85 0
 31
-Z11 !s108 1698056466.000000
+R5
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v|
 !i113 1
@@ -82,7 +130,7 @@ R6
 R7
 n@instruction@memory
 vMUX2to1
-R10
+R0
 !i10b 1
 !s100 zjRR<;;L>@]C1g84k6XM]2
 R1
@@ -92,13 +140,13 @@ R3
 w1697459267
 8F:/University_terms/term 9/CALab/Projects/ARM/MUX2to1.v
 FF:/University_terms/term 9/CALab/Projects/ARM/MUX2to1.v
-!i122 179
+!i122 219
 L0 2 9
 R4
 r1
 !s85 0
 31
-R11
+R5
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/MUX2to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/MUX2to1.v|
 !i113 1
@@ -106,7 +154,7 @@ R6
 R7
 n@m@u@x2to1
 vMUX4to1
-R10
+R0
 !i10b 1
 !s100 FFNY2ScKPC`BD^>TXhOKa1
 R1
@@ -116,13 +164,13 @@ R3
 w1697455568
 8F:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v
 FF:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v
-!i122 180
+!i122 220
 L0 2 11
 R4
 r1
 !s85 0
 31
-R11
+R5
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v|
 !i113 1
@@ -130,7 +178,7 @@ R6
 R7
 n@m@u@x4to1
 vRegIFID
-R0
+Z12 !s110 1698063706
 !i10b 1
 !s100 NIdik^R]@AR<i2ni66fHo3
 R1
@@ -140,13 +188,13 @@ R3
 w1698055625
 8F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v
 FF:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v
-!i122 176
+!i122 216
 L0 1 19
 R4
 r1
 !s85 0
 31
-R5
+Z13 !s108 1698063706.000000
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v|
 !i113 1
@@ -154,7 +202,7 @@ R6
 R7
 n@reg@i@f@i@d
 vRegister
-R10
+R0
 !i10b 1
 !s100 JA:SbbCnIk3QX4l<dl9>A0
 R1
@@ -164,7 +212,7 @@ R3
 w1698055632
 8F:/University_terms/term 9/CALab/Projects/ARM/Register.v
 FF:/University_terms/term 9/CALab/Projects/ARM/Register.v
-!i122 178
+!i122 218
 L0 1 17
 R4
 r1
@@ -177,24 +225,48 @@ R5
 R6
 R7
 n@register
-vStageId
-R0
+vRegisterFile
+R10
 !i10b 1
-!s100 jEdW0Z5mCe;;QPWDYn0`i3
+!s100 ]oKU7EffeZ8aQS4o3DKoi2
 R1
-ITRg4UgLkD:?;nYP4O_dAj3
+IA>h5ilU3La5k3OMCjWzTV2
 R2
 R3
-w1697454498
-8F:/University_terms/term 9/CALab/Projects/ARM/StageID.v
-FF:/University_terms/term 9/CALab/Projects/ARM/StageID.v
-!i122 175
-L0 1 6
+w1698059253
+8F:/University_terms/term 9/CALab/Projects/ARM/register_file.v
+FF:/University_terms/term 9/CALab/Projects/ARM/register_file.v
+!i122 224
+L0 1 35
 R4
 r1
 !s85 0
 31
-R5
+R11
+!s107 F:/University_terms/term 9/CALab/Projects/ARM/register_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/register_file.v|
+!i113 1
+R6
+R7
+n@register@file
+vStageId
+R12
+!i10b 1
+!s100 RSSiTOL9Y_O:0Bca`IU1R2
+R1
+I=kbTfhlEj0X<cLfGJ826V1
+R2
+R3
+w1698062608
+8F:/University_terms/term 9/CALab/Projects/ARM/StageID.v
+FF:/University_terms/term 9/CALab/Projects/ARM/StageID.v
+!i122 215
+L0 1 84
+R4
+r1
+!s85 0
+31
+R13
 !s107 F:/University_terms/term 9/CALab/Projects/ARM/StageID.v|
 !s90 -reportprogress|300|-work|work|-stats=none|F:/University_terms/term 9/CALab/Projects/ARM/StageID.v|
 !i113 1
@@ -212,7 +284,7 @@ R3
 w1698055904
 8F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v
 FF:/University_terms/term 9/CALab/Projects/ARM/StageIF.v
-!i122 174
+!i122 214
 L0 1 41
 R4
 r1
@@ -236,7 +308,7 @@ R3
 w1698056399
 8F:/University_terms/term 9/CALab/Projects/ARM/TB.v
 FF:/University_terms/term 9/CALab/Projects/ARM/TB.v
-!i122 183
+!i122 223
 L0 2 24
 R4
 r1
@@ -252,16 +324,16 @@ n@t@b
 vTop
 R10
 !i10b 1
-!s100 3^4TYd3ahcLBIJ0k@jZ@g2
+!s100 i<4J6NboiE^0[PE_`k_kg2
 R1
-IN@JRJILf^dcHm`MVHYgG90
+IKiAbFhA>AX:6Gbkf6?O5`3
 R2
 R3
-w1698056458
+w1698063697
 8F:/University_terms/term 9/CALab/Projects/ARM/Top.v
 FF:/University_terms/term 9/CALab/Projects/ARM/Top.v
-!i122 182
-L0 1 30
+!i122 222
+L0 1 61
 R4
 r1
 !s85 0
