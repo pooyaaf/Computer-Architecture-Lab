@@ -1,14 +1,10 @@
 `timescale 1ns/1ns
 module TB();
     reg clk = 1'b0, rst = 1'b0;
-    wire [31:0] pc, instruction;
 
     Top top(
         .clk(clk),
-        .rst(rst),
-        .pc(pc),
-        .instruction(instruction)
-      
+        .rst(rst)
     );
 
 

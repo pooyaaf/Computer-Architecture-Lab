@@ -62,22 +62,21 @@ module StageId(
         .readRegister2(regfile2Inp),
         .writeRegister(wbDest),
         .writeData(wbValue),
-        .regWrite(wbWbEn),
-        .sclr(1'b0),
+        .writeEn(wbWbEn),
         .readData1(regRn),
         .readData2(regRm)
     );
 
-    Mux2To1 #(9) muxCtrlUnit(
-        .a0({aluCmdCU, memReadCU, memWriteCU, wbEnCU, branchCU, sCU}),
-        .a1(9'd0),
+    MUX2to1 #(9) muxCtrlUnit(
+        .input1({aluCmdCU, memReadCU, memWriteCU, wbEnCU, branchCU, sCU}),
+        .input2(9'd0),
         .sel(condFinal),
         .out({aluCmd, memRead, memWriteEn, wbEn, branch, s})
     );
 
-    Mux2To1 #(4) muxRegfile(
-        .a0(inst[3:0]),
-        .a1(inst[15:12]),
+    MUX2to1 #(4) muxRegfile(
+        .input1(inst[3:0]),
+        .input2(inst[15:12]),
         .sel(memWriteEn),
         .out(regfile2Inp)
     );

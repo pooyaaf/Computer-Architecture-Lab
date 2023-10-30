@@ -9,6 +9,15 @@ module Top(
     wire memRead, memWriteEn, wbEn, branch, s,imm,hazardTwoSrc;
     wire [11:0] shiftOperand;
     wire [23:0] imm24;
+    //IDEX
+    wire [31:0] pcOutIdEx;
+    wire [3:0] aluCmdOutIdEx;
+    wire memReadOutIdEx, memWriteOutIdEx, wbEnOutIdEx, branchOutIdEx, sOutIdEx;
+    wire [31:0] regRnOutIdEx, regRmOutIdEx;
+    wire immOutIdEx;
+    wire [11:0] shiftOperandOutIdEx;
+    wire [23:0] imm24OutIdEx;
+    wire [3:0] destOutIdEx;
 
     StageIF IF(
         .clk(clk),
@@ -20,7 +29,6 @@ module Top(
         .instruction(instOutIF)
     );
 
-  
     RegIFID regIFID(
         .clk(clk),
         .rst(rst),
@@ -58,4 +66,36 @@ module Top(
         .hazardTwoSrc(hazardTwoSrc)
     );
 
+    RegIDEX regIDEX(
+        .clk(clk),
+        .rst(rst),
+        .pcIn(pcOut),
+        .aluCmdIn(aluCmd),
+        .memReadIn(memRead),
+        .memWriteIn(memWriteEn),
+        .wbEnIn(wbEn), 
+        .branchIn(branch), 
+        .sIn(s),
+        .regRnIn(regRn), 
+        .regRmIn(regRm),
+        .immIn(imm), 
+        .shiftOperandIn(shiftOperand), 
+        .imm24In(imm24), 
+        .destIn(dest),
+        .flush(1'b0), 
+        .freeze(1'b0),
+        .pcOut(pcOutIdEx),
+        .aluCmdOut(aluCmdOutIdEx), 
+        .memReadOut(memReadOutIdEx), 
+        .memWriteOut(memWriteOutIdEx),
+        .wbEnOut(wbEnOutIdEx), 
+        .branchOut(branchOutIdEx), 
+        .sOut(sOutIdEx),
+        .regRnOut(regRnOutIdEx), 
+        .regRmOut(regRmOutIdEx),
+        .immOut(immOutIdEx), 
+        .shiftOperandOut(shiftOperandOutIdEx), 
+        .imm24Out(imm24OutIdEx), 
+        .destOut(destOutIdEx)
+    );
 endmodule

@@ -4,11 +4,9 @@ module RegisterFile #(
     input clk, rst,
     input [3:0] readRegister1, readRegister2, writeRegister,
     input [WordLen-1:0] writeData,
-    input regWrite,   
+    input writeEn,   
     output [WordLen-1:0] readData1, readData2
 );
-  //sclr,
-  
     reg [WordLen-1:0] regFile [0:14];
 
     //read
@@ -26,9 +24,7 @@ module RegisterFile #(
         if (rst)
             for (i = 0; i < 15; i = i + 1)
                 regFile[i] <= i;
-        // else if (sclr)
-        //     regFile[writeRegister] <= {WordLen{1'b0}};
-        else if (regWrite)
+        else if (writeEn)
             regFile[writeRegister] <= writeData;
     end
 
