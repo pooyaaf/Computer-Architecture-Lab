@@ -14,13 +14,33 @@ Top level modules:
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/RegExecMem.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/RegExecMem.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegsExMem
+
+Top level modules:
+	RegsExMem
+
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/Top.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/Top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Top
+
+Top level modules:
+	Top
+
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/InstructionMemory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/Register.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/Register.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Register
+-- Compiling module RegisterNegEdge
 
 Top level modules:
 	Register
+	RegisterNegEdge
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/RegMemWB.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/RegMemWB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -49,6 +69,13 @@ Top level modules:
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageWriteBack.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageWriteBack.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module StageEx
+
+Top level modules:
+	StageEx
+
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageID.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageID.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module StageId
@@ -56,15 +83,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	StageId
 
-} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v}
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/ALU.v} {1 {vlog -work work -stats=none {F:\University_terms\term 9\CALab\Projects\ARM\ALU.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module RegIFID
+-- Compiling module ALU
 
 Top level modules:
-	RegIFID
+	ALU
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/MUX4to1.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -73,6 +97,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	MUX4to1
 
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/RegIFID.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegIFID
+
+Top level modules:
+	RegIFID
+
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/val2_generator.v} {1 {vlog -work work -stats=none {F:\University_terms\term 9\CALab\Projects\ARM\val2_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Val2Generator
+
+Top level modules:
+	Val2Generator
+
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageIF.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module StageIF
@@ -80,8 +118,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	StageIF
 
-} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/StageMem.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/StageMem.v}
+} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ConditionCheck
+
+Top level modules:
+	ConditionCheck
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/register_file.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/register_file.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -89,13 +131,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	RegisterFile
-
-} {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/condition_check.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ConditionCheck
-
-Top level modules:
-	ConditionCheck
 
 } {} {}} {F:/University_terms/term 9/CALab/Projects/ARM/TB.v} {1 {vlog -work work -stats=none {F:/University_terms/term 9/CALab/Projects/ARM/TB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

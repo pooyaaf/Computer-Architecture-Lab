@@ -18,13 +18,26 @@ module Top(
     wire [11:0] shiftOperandOutIdEx;
     wire [23:0] imm24OutIdEx;
     wire [3:0] destOutIdEx;
+    //  EXE
+    wire memReadOutEx, memWriteOutEx, wbEnOutEx;
+    wire branchTakenEX;
+    wire [31:0] branchAddrEX;
+    wire [31:0] aluResOutEx, reg2OutEx;
+    wire [3:0] destOutEx;
+    wire [3:0] statusEX; // N Z C V
+    wire carryIn;
+    assign carryIn = statusEX[1];
+    // EX-MEM
+    wire memReadOutExMem, memWriteOutExMem, wbEnOutExMem;
+    wire [31:0] aluResOutExMem, reg2OutExMem;
+    wire [3:0] destOutExMem;
 
     StageIF IF(
         .clk(clk),
         .rst(rst),
         .freeze(1'b0),
-        .branchTaken(1'b0),
-        .branchAddr(32'd0),
+        .branchTaken(branchTakenEX),
+        .branchAddr(branchAddrEX),
         .pc(pcOutIf),
         .instruction(instOutIF)
     );
@@ -45,7 +58,7 @@ module Top(
         .rst(rst),
         .pcIn(pcOutIfPipe),
         .inst(instOutIfpipe),
-        .status(4'b0),
+        .status(statusEX),
         .wbWbEn(1'b0),
         .wbValue(32'b0),
         .wbDest(4'b0),
@@ -98,4 +111,54 @@ module Top(
         .imm24Out(imm24OutIdEx), 
         .destOut(destOutIdEx)
     );
+
+
+
+    StageEx stageEx(
+        .clk(clk),
+        .rst(rst),
+        .wbEnIn(wbEnOutIdEx),
+        .memREnIn(memReadOutIdEx),
+        .memWEnIn(memWriteOutIdEx),
+        .branchTakenIn(branchOutIdEx),
+        .ldStatus(sOutIdEx),
+        .imm(immOutIdEx),
+        .carryIn(carryIn),
+        .exeCmd(aluCmdOutIdEx),
+        .val1(regRnOutIdEx),
+        .valRm(regRmOutIdEx),
+        .pc(pcOutIdEx),
+        .shifterOperand(shiftOperandOutIdEx),
+        .signedImm24(imm24OutIdEx),
+        .dest(destOutIdEx),
+        .wbEnOutEX(wbEnOutEx),
+        .memREnOut(memReadOutEx),
+        .memWEnOut(memWriteOutEx),
+        .branchTakenOut(branchTakenEX),
+        .aluRes(aluResOutEx),
+        .exeValRm(reg2OutEx),
+        .branchAddr(branchAddrEX),
+        .exeDest(destOutEx),
+        .status(statusEX)
+    );
+
+    RegsExMem regsExMem(
+        .clk(clk),
+        .rst(rst),
+        .wbEnIn(wbEnOutEx),
+        .memREnIn(memReadOutEx),
+        .memWEnIn(memWriteOutEx),
+        .aluResIn(aluResOutEx),
+        .valRmIn(reg2OutEx),
+        .destIn(destOutEx),
+        .freeze(1'b0),
+        .wbEnOut(wbEnOutExMem),
+        .memREnOut(memReadOutExMem),
+        .memWEnOut(memWriteOutExMem),
+        .aluResOut(aluResOutExMem),
+        .valRmOut(reg2OutExMem),
+        .destOut(destOutExMem)
+    );
+
+
 endmodule
