@@ -20,22 +20,25 @@ module StageId(
     output signed [23:0] imm24,
     output [3:0] dest,
     // To Hazard
-    output hazardTwoSrc
+    output hazardTwoSrc, 
+    output [3:0] hazardRn, hazardRdm
 );
+    wire cond, condFinal;
+    wire [3:0] aluCmdCU, rn;
+    wire [3:0] regfile2Inp;
+    wire memReadCU, memWriteCU, wbEnCU, branchCU, sCU;
+
     assign pcOut = pcIn;
     assign imm = inst[25];
     assign shiftOperand = inst[11:0];
     assign imm24 = inst[23:0];
     assign dest = inst[15:12];
-    
-    wire [3:0] aluCmdCU;
-    wire memReadCU, memWriteCU, wbEnCU, branchCU, sCU;
-    wire [3:0] regfile2Inp;
-    wire cond, condFinal;
+    assign rn = inst[19:16];
+    assign hazardRn = rn;
+    assign hazardRdm = regfile2Inp;
+  
     assign hazardTwoSrc = ~imm | memWriteCU;
     assign condFinal = ~cond | hazard;
-
-   
 
     ConditionCheck cc(
         .cond(inst[31:28]),
@@ -58,7 +61,7 @@ module StageId(
     RegisterFile rf(
         .clk(clk),
         .rst(rst),
-        .readRegister1(inst[19:16]),
+        .readRegister1(rn),
         .readRegister2(regfile2Inp),
         .writeRegister(wbDest),
         .writeData(wbValue),

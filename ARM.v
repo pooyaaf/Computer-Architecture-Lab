@@ -262,8 +262,6 @@ wire [31:0] PC, INSTRUCTION;
 
     Top top(
         .clk(CLOCK_50),
-        .rst(~SW[0]),
-        .pc(PC),
-        .instruction(INSTRUCTION)
+        .rst(~SW[0])
     );
 endmodule

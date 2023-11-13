@@ -5,11 +5,11 @@ module Top(
 
     // ID
     wire [31:0] pcOut,regRn,regRm;
-    wire [3:0] aluCmd,dest;
+    wire [3:0] aluCmd, dest, hazardRn, hazardRdm;
     wire memRead, memWriteEn, wbEn, branch, s,imm,hazardTwoSrc;
     wire [11:0] shiftOperand;
     wire [23:0] imm24;
-    //IDEX
+    // ID-EX
     wire [31:0] pcOutIdEx;
     wire [3:0] aluCmdOutIdEx;
     wire memReadOutIdEx, memWriteOutIdEx, wbEnOutIdEx, branchOutIdEx, sOutIdEx;
@@ -18,7 +18,7 @@ module Top(
     wire [11:0] shiftOperandOutIdEx;
     wire [23:0] imm24OutIdEx;
     wire [3:0] destOutIdEx;
-    //  EXE
+    // EXE
     wire memReadOutEx, memWriteOutEx, wbEnOutEx;
     wire branchTakenEX;
     wire [31:0] branchAddrEX;
@@ -31,11 +31,23 @@ module Top(
     wire memReadOutExMem, memWriteOutExMem, wbEnOutExMem;
     wire [31:0] aluResOutExMem, reg2OutExMem;
     wire [3:0] destOutExMem;
+    // Memory
+    wire wbEnOutMem, memREnOutMem;
+    wire [31:0] aluResOutMem, memOutMem;
+    wire [3:0] destOutMem;
+    // MEM-WB
+    wire wbEnOutMemWb, memREnOutMemWb;
+    wire [31:0] aluResOutMemWb, memDataOutMemWb;
+    wire [3:0] destOutMemWb;
+    // WB
+    wire[31:0] WbValue;
+    // Hazard
+    wire hazard;
 
     StageIF IF(
         .clk(clk),
         .rst(rst),
-        .freeze(1'b0),
+        .freeze(hazard),
         .branchTaken(branchTakenEX),
         .branchAddr(branchAddrEX),
         .pc(pcOutIf),
@@ -45,8 +57,8 @@ module Top(
     RegIFID regIFID(
         .clk(clk),
         .rst(rst),
-        .freeze(1'b0),
-        .flush(1'b0),
+        .freeze(hazard),
+        .flush(branchTakenEX),
         .pcIn(pcOutIf),
         .instructionIn(instOutIF),
         .pcOut(pcOutIfPipe),
@@ -59,10 +71,10 @@ module Top(
         .pcIn(pcOutIfPipe),
         .inst(instOutIfpipe),
         .status(statusEX),
-        .wbWbEn(1'b0),
-        .wbValue(32'b0),
-        .wbDest(4'b0),
-        .hazard(1'b0),
+        .wbWbEn(wbEnOutMemWb),
+        .wbValue(WbValue),
+        .wbDest(destOutMemWb),
+        .hazard(hazard),
         .pcOut(pcOut),
         .aluCmd(aluCmd),
         .memRead(memRead),
@@ -76,7 +88,9 @@ module Top(
         .shiftOperand(shiftOperand),
         .imm24(imm24),
         .dest(dest),
-        .hazardTwoSrc(hazardTwoSrc)
+        .hazardTwoSrc(hazardTwoSrc),
+        .hazardRn(hazardRn),
+        .hazardRdm(hazardRdm)
     );
 
     RegIDEX regIDEX(
@@ -95,8 +109,7 @@ module Top(
         .shiftOperandIn(shiftOperand), 
         .imm24In(imm24), 
         .destIn(dest),
-        .flush(1'b0), 
-        .freeze(1'b0),
+        .flush(branchTakenEX), 
         .pcOut(pcOutIdEx),
         .aluCmdOut(aluCmdOutIdEx), 
         .memReadOut(memReadOutIdEx), 
@@ -111,8 +124,6 @@ module Top(
         .imm24Out(imm24OutIdEx), 
         .destOut(destOutIdEx)
     );
-
-
 
     StageEx stageEx(
         .clk(clk),
@@ -151,7 +162,6 @@ module Top(
         .aluResIn(aluResOutEx),
         .valRmIn(reg2OutEx),
         .destIn(destOutEx),
-        .freeze(1'b0),
         .wbEnOut(wbEnOutExMem),
         .memREnOut(memReadOutExMem),
         .memWEnOut(memWriteOutExMem),
@@ -160,5 +170,53 @@ module Top(
         .destOut(destOutExMem)
     );
 
+    StageMem stageMem(
+        .clk(clk),
+        .rst(rst),
+        .wbEnIn(wbEnOutExMem),
+        .memREnIn(memReadOutExMem),
+        .memWEnIn(memWriteOutExMem),
+        .aluResIn(aluResOutExMem),
+        .valRm(reg2OutExMem),
+        .destIn(destOutExMem),
+        .wbEnOut(wbEnOutMem),
+        .memREnOut(memREnOutMem),
+        .aluResOut(aluResOutMem),
+        .memOut(memOutMem),
+        .destOut(destOutMem)
+    );
 
+    RegsMemWb regsMemWb(
+        .clk(clk),
+        .rst(rst),
+        .wbEnIn(wbEnOutMem),
+        .memREnIn(memREnOutMem),
+        .aluResIn(aluResOutMem),
+        .memDataIn(memOutMem),
+        .destIn(destOutMem),
+        .wbEnOut(wbEnOutMemWb),
+        .memREnOut(memREnOutMemWb),
+        .aluResOut(aluResOutMemWb),
+        .memDataOut(memDataOutMemWb),
+        .destOut(destOutMemWb)
+    );
+
+
+    MUX2to1 #(32) writeBackStage(
+        .input1(aluResOutMemWb),
+        .input2(memDataOutMemWb),
+        .sel(memREnOutMemWb),
+        .out(WbValue)
+    );
+
+    HazardUnit hzrd(
+        .rn(hazardRn), 
+        .rdm(hazardRdm),
+        .twoSrc(hazardTwoSrc),
+        .destEx(destOutEx), 
+        .destMem(destOutMem),
+        .wbEnEx(wbEnOutEx), 
+        .wbEnMem(wbEnOutMem),
+        .hazard(hazard)
+    );
 endmodule

@@ -27,5 +27,4 @@ module RegisterFile #(
         else if (writeEn)
             regFile[writeRegister] <= writeData;
     end
-
 endmodule

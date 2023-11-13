@@ -7,8 +7,6 @@ module TB();
         .rst(rst)
     );
 
-
-    
     initial begin
         #50 rst = 1'b1;
         #50 rst = 1'b0;
