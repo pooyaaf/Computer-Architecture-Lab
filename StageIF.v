@@ -4,9 +4,6 @@ module StageIF (
     input[31:0] branchAddr,
     output reg [31:0] pc, instruction
 );
-
-    assign {branchTaken, freeze,clr} = 3'b000; 
-    assign branchAddr = 32'd0; 
     wire [31:0] pcRegOut, lastPc, pcAdderOut, instructionOut;
 
     MUX2to1 #(32) PC_Mux(
@@ -21,7 +18,7 @@ module StageIF (
         .rst(rst),
         .in(lastPc),
         .ld(~freeze),
-        .clr(clr),
+        .clr(1'b0),
         .out(pcRegOut)
     );
 

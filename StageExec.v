@@ -54,5 +54,4 @@ module StageEx(
         .b(imm24SignExt),
         .out(branchAddr)
     );
-
 endmodule

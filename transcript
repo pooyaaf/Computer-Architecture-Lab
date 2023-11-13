@@ -1,254 +1,6 @@
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v failed with 2 errors.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 1 failed with 2 errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Compile of Top.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of Top.v was successful.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Compile of TB.v was successful.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
 vsim -gui work.TB
 # vsim -gui work.TB 
-# Start time: 15:01:18 on Nov 06,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# ** Error: (vsim-3063) Port 'exeCmd' not found in the connected module (4th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/alu File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 41
-# Error loading design
-# End time: 15:01:18 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 13
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:02:56 on Nov 06,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# ** Error: (vsim-3063) Port 'exeCmd' not found in the connected module (10th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 117
-# ** Error: (vsim-3063) Port 'exeCmd' not found in the connected module (4th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/alu File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 41
-# Error loading design
-# End time: 15:02:57 on Nov 06,2023, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 2
-# Compile of Top.v was successful.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:05:02 on Nov 06,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# ** Error: (vsim-3063) Port 'exeCmd' not found in the connected module (4th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/alu File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 41
-# Error loading design
-# End time: 15:05:03 on Nov 06,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 3
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 15:06:22 on Nov 06,2023
+# Start time: 13:23:51 on Nov 13,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -268,13 +20,68 @@ vsim -gui work.TB
 # Loading work.ALU
 # Loading work.RegsExMem
 # WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/TB/*
 add wave -position insertpoint sim:/TB/top/stageEx/*
-add wave -position insertpoint sim:/TB/top/regsExMem/*
 run -all
 # ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(17)
-#    Time: 1100 ns  Iteration: 0  Instance: /TB
+#    Time: 10100 ns  Iteration: 0  Instance: /TB
 # Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 17
+add wave -position insertpoint sim:/TB/top/regsExMem/*
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(17)
+#    Time: 10100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 17
+add wave -position insertpoint sim:/TB/top/stageEx/branchCalculator/*
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(17)
+#    Time: 10100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 17
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+restart
+# Loading work.StageIF
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.RegsExMem
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(17)
+#    Time: 10100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 17
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# 23 compiles, 0 failed with no errors.
 # Compile of ARM.v was successful.
 # Compile of StageIF.v was successful.
 # Compile of StageID.v was successful.
@@ -290,8 +97,18 @@ run -all
 # Compile of MUX2to1.v was successful.
 # Compile of MUX4to1.v was successful.
 # Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# 23 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
 # Loading work.MUX2to1
@@ -300,27 +117,15 @@ restart
 # Loading work.Adder
 # Loading work.RegIFID
 # Loading work.StageId
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.RegisterNegEdge
-# Loading work.RegsExMem
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Compile of TB.v was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.TB
 # Loading work.ConditionCheck
 # Loading work.ControlUnit
 # Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
 # Loading work.Val2Generator
+# Loading work.RegisterNegEdge
 # Loading work.ALU
+# Loading work.RegsExMem
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -328,6 +133,3 @@ run -all
 # ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(17)
 #    Time: 10100 ns  Iteration: 0  Instance: /TB
 # Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 17
-quit -sim
-# End time: 15:17:36 on Nov 06,2023, Elapsed time: 0:11:14
-# Errors: 0, Warnings: 1
