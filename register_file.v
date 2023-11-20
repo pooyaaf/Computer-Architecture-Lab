@@ -6,7 +6,7 @@ module RegisterFile #(
     input [WordLen-1:0] writeData,
     input writeEn,   
     output [WordLen-1:0] readData1, readData2
-);
+ );
     reg [WordLen-1:0] regFile [0:14];
 
     //read
@@ -27,4 +27,5 @@ module RegisterFile #(
         else if (writeEn)
             regFile[writeRegister] <= writeData;
     end
+    // assign outregFile = regFile;
 endmodule

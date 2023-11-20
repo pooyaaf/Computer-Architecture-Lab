@@ -201,7 +201,6 @@ module Top(
         .destOut(destOutMemWb)
     );
 
-
     MUX2to1 #(32) writeBackStage(
         .input1(aluResOutMemWb),
         .input2(memDataOutMemWb),

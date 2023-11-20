@@ -1,40 +1,7 @@
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 14:41:04 on Nov 13,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# Loading work.StageMem
-# Loading work.DataMemory
-# Loading work.RegsMemWb
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'wbValue'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/StageID.v(9).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/Stageid File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 66
-# ** Error: (vsim-3063) Port 'aluResInaluResOutMem' not found in the connected module (5th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/regsMemWb File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 187
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'out'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/MUX2to1.v(7).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/writeBackStage File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 203
-# Error loading design
-# End time: 14:41:04 on Nov 13,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 3
 # Compile of Top.v was successful.
 vsim -gui work.TB
 # vsim -gui work.TB 
-# Start time: 14:42:12 on Nov 13,2023
+# Start time: 12:59:13 on Nov 20,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -56,99 +23,14 @@ vsim -gui work.TB
 # Loading work.StageMem
 # Loading work.DataMemory
 # Loading work.RegsMemWb
-# ** Error: (vsim-3063) Port 'aluResInaluResOutMem' not found in the connected module (5th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/regsMemWb File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 187
-# Error loading design
-# End time: 14:42:12 on Nov 13,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of Top.v was successful.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 14:43:17 on Nov 13,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# Loading work.StageMem
-# Loading work.DataMemory
-# Loading work.RegsMemWb
-# ** Error: (vsim-3063) Port 'aluResInaluResOutMem' not found in the connected module (5th connection).
-#    Time: 0 ns  Iteration: 0  Instance: /TB/top/regsMemWb File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 187
-# Error loading design
-# End time: 14:43:18 on Nov 13,2023, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-# Compile of Top.v was successful.
-vsim -gui work.TB
-# vsim -gui work.TB 
-# Start time: 14:44:05 on Nov 13,2023
-# Loading work.TB
-# Loading work.Top
-# Loading work.StageIF
-# Loading work.MUX2to1
-# Loading work.Register
-# Loading work.InstructionMemory
-# Loading work.Adder
-# Loading work.RegIFID
-# Loading work.StageId
-# Loading work.ConditionCheck
-# Loading work.ControlUnit
-# Loading work.RegisterFile
-# Loading work.RegIDEX
-# Loading work.StageEx
-# Loading work.Val2Generator
-# Loading work.RegisterNegEdge
-# Loading work.ALU
-# Loading work.RegsExMem
-# Loading work.StageMem
-# Loading work.DataMemory
-# Loading work.RegsMemWb
+# Loading work.HazardUnit
 # WARNING: No extended dataflow license exists
-add wave -position insertpoint sim:/TB/top/Stageid/rf/*
-add wave -position insertpoint sim:/TB/top/regsMemWb/*
-run -all
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
-add wave -position insertpoint sim:/TB/top/Stageid/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
-add wave -position insertpoint sim:/TB/top/Stageid/rf/*
-add wave -position insertpoint sim:/TB/top/stageEx/*
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
 quit -sim
-# End time: 15:16:47 on Nov 13,2023, Elapsed time: 0:32:42
+# End time: 12:59:27 on Nov 20,2023, Elapsed time: 0:00:14
 # Errors: 0, Warnings: 2
 # Compile of ARM.v was successful.
 # Compile of StageIF.v was successful.
-# Compile of StageID.v failed with 3 errors.
+# Compile of StageID.v was successful.
 # Compile of StageExec.v was successful.
 # Compile of StageMem.v was successful.
 # Compile of StageWriteBack.v was successful.
@@ -170,12 +52,35 @@ quit -sim
 # Compile of val2_generator.v was successful.
 # Compile of data_memory.v was successful.
 # Compile of hazard_unit.v was successful.
-# 24 compiles, 1 failed with 3 errors.
-# Compile of StageID.v failed with 1 errors.
+# 24 compiles, 0 failed with no errors.
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
 # Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# 24 compiles, 0 failed with no errors.
 vsim -gui work.TB
 # vsim -gui work.TB 
-# Start time: 15:19:38 on Nov 13,2023
+# Start time: 13:28:37 on Nov 20,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -198,24 +103,11 @@ vsim -gui work.TB
 # Loading work.DataMemory
 # Loading work.RegsMemWb
 # Loading work.HazardUnit
-add wave -position insertpoint sim:/TB/top/stageEx/*
-add wave -position insertpoint sim:/TB/top/hzrd/*
-add wave -position insertpoint sim:/TB/top/hzrd/*
-add wave -position insertpoint sim:/TB/top/stageEx/*
-run -all
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
-add wave -position insertpoint sim:/TB/top/Stageid/rf/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
+# ** Error: (vsim-3063) Port 'rdm' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/hzrd File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 211
+# Error loading design
+# End time: 13:28:38 on Nov 20,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
 # Compile of ARM.v was successful.
 # Compile of StageIF.v was successful.
 # Compile of StageID.v was successful.
@@ -241,33 +133,9 @@ run -all
 # Compile of data_memory.v was successful.
 # Compile of hazard_unit.v was successful.
 # 24 compiles, 0 failed with no errors.
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
-# Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# Compile of data_memory.v was successful.
-# Compile of hazard_unit.v was successful.
-# 24 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 13:29:22 on Nov 20,2023
 # Loading work.TB
 # Loading work.Top
 # Loading work.StageIF
@@ -290,41 +158,39 @@ restart
 # Loading work.DataMemory
 # Loading work.RegsMemWb
 # Loading work.HazardUnit
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
-#    Time: 10100 ns  Iteration: 0  Instance: /TB
-# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
-add wave -position insertpoint sim:/TB/top/writeBackStage/*
-add wave -position insertpoint sim:/TB/top/*
 # WARNING: No extended dataflow license exists
+add wave -r sim:/TB/top/Stageid/rf/*
+add wave -r /*
+# Compile of register_file.v failed with 1 errors.
 quit -sim
-# End time: 16:01:50 on Nov 13,2023, Elapsed time: 0:42:12
-# Errors: 0, Warnings: 1
-# Compile of ARM.v was successful.
-# Compile of StageIF.v was successful.
-# Compile of StageID.v was successful.
-# Compile of StageExec.v was successful.
-# Compile of StageMem.v was successful.
-# Compile of StageWriteBack.v was successful.
-# Compile of RegIFID.v was successful.
-# Compile of RegIDEX.v was successful.
-# Compile of RegExecMem.v was successful.
-# Compile of RegMemWB.v was successful.
-# Compile of Adder.v was successful.
-# Compile of Register.v was successful.
-# Compile of MUX2to1.v was successful.
-# Compile of MUX4to1.v was successful.
-# Compile of InstructionMemory.v was successful.
-# Compile of Top.v was successful.
-# Compile of TB.v was successful.
+# End time: 13:33:44 on Nov 20,2023, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 3
+# Compile of register_file.v failed with 2 errors.
 # Compile of register_file.v was successful.
-# Compile of control_unit.v was successful.
-# Compile of condition_check.v was successful.
-# Compile of ALU.v was successful.
-# Compile of val2_generator.v was successful.
-# Compile of data_memory.v was successful.
-# Compile of hazard_unit.v was successful.
-# 24 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 13:37:44 on Nov 20,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/TB/top/Stageid/rf/*
