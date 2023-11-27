@@ -11,7 +11,7 @@ module TB();
         #50 rst = 1'b1;
         #50 rst = 1'b0;
 
-        #10000;
+        #100000;
 	    $stop;
     end
 
