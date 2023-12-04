@@ -262,6 +262,7 @@ wire [31:0] PC, INSTRUCTION;
 
     Top top(
         .clk(CLOCK_50),
-        .rst(~SW[0])
+        .rst(~SW[0]),
+		.forwardEn(SW[1])
     );
 endmodule

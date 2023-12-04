@@ -21,5 +21,478 @@
 # Compile of ALU.v was successful.
 # Compile of val2_generator.v was successful.
 # Compile of data_memory.v was successful.
+# Compile of hazard_unit.v failed with 1 errors.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 1 failed with 1 error.
 # Compile of hazard_unit.v was successful.
-# 24 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 13:17:39 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'hzrd'.  Expected 10, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/hzrd File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 211
+# ** Warning: (vsim-3722) F:/University_terms/term 9/CALab/Projects/ARM/Top.v(211): [TFMPC] - Missing connection for port 'memREn'.
+# ** Warning: (vsim-3722) F:/University_terms/term 9/CALab/Projects/ARM/Top.v(211): [TFMPC] - Missing connection for port 'forwardEn'.
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/TB/top/Stageid/*
+run -all
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(15)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 15
+quit -sim
+# End time: 13:18:16 on Dec 04,2023, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 7
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v failed with 1 errors.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of RegIDEX.v was successful.
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 14:34:32 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# ** Error: (vsim-3033) Instantiation of 'Mux4To1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 62
+#         Searched libraries:
+#             F:/University_terms/term 9/CALab/Projects/ARM/work
+# ** Error: (vsim-3033) Instantiation of 'Mux4To1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 71
+#         Searched libraries:
+#             F:/University_terms/term 9/CALab/Projects/ARM/work
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+# Error loading design
+# End time: 14:34:33 on Dec 04,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 4
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 14:35:40 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.MUX4to1
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+# ** Error: (vsim-3063) Port 'forwardEn' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top File: F:/University_terms/term 9/CALab/Projects/ARM/TB.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'valWb'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 140
+# ** Error: (vsim-3063) Port 'a00' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc1 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 62
+# ** Error: (vsim-3063) Port 'a01' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc1 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 62
+# ** Error: (vsim-3063) Port 'a10' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc1 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 62
+# ** Error: (vsim-3063) Port 'a11' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc1 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 62
+# ** Error: (vsim-3063) Port 'a00' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc2 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 71
+# ** Error: (vsim-3063) Port 'a01' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc2 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 71
+# ** Error: (vsim-3063) Port 'a10' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc2 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 71
+# ** Error: (vsim-3063) Port 'a11' not found in the connected module (4th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx/muxSrc2 File: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v Line: 71
+# Error loading design
+# End time: 14:35:41 on Dec 04,2023, Elapsed time: 0:00:01
+# Errors: 9, Warnings: 3
+# Compile of StageExec.v was successful.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 14:36:37 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.MUX4to1
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+# ** Error: (vsim-3063) Port 'forwardEn' not found in the connected module (3rd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top File: F:/University_terms/term 9/CALab/Projects/ARM/TB.v Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'valWb'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 140
+# Error loading design
+# End time: 14:36:38 on Dec 04,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.TB
+# vsim -gui work.TB 
+# Start time: 14:39:03 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.MUX4to1
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'valWb'. The port definition is at: F:/University_terms/term 9/CALab/Projects/ARM/StageExec.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /TB/top/stageEx File: F:/University_terms/term 9/CALab/Projects/ARM/Top.v Line: 140
+# Compile of Top.v was successful.
+vsim -gui work.TB
+# End time: 14:42:39 on Dec 04,2023, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 4
+# vsim -gui work.TB 
+# Start time: 14:42:39 on Dec 04,2023
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.MUX4to1
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+add wave -position insertpoint  \
+sim:/TB/top/IF/clk \
+sim:/TB/top/IF/rst
+add wave -position insertpoint  \
+sim:/TB/top/regIFID/instructionOut
+add wave -position insertpoint  \
+sim:/TB/top/Stageid/rf/regFile
+add wave -position insertpoint sim:/TB/top/forwardUnit/*
+run -all
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+add wave -position insertpoint  \
+sim:/TB/top/stageEx/valMem \
+sim:/TB/top/stageEx/valWb
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/TB/top/IF/pc
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+add wave -position insertpoint  \
+sim:/TB/top/stageEx/pc
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+add wave -position insertpoint sim:/TB/top/stageEx/alu/*
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+add wave -position insertpoint sim:/TB/top/stageEx/*
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ARM.v was successful.
+# Compile of StageIF.v was successful.
+# Compile of StageID.v was successful.
+# Compile of StageExec.v was successful.
+# Compile of StageMem.v was successful.
+# Compile of StageWriteBack.v was successful.
+# Compile of RegIFID.v was successful.
+# Compile of RegIDEX.v was successful.
+# Compile of RegExecMem.v was successful.
+# Compile of RegMemWB.v was successful.
+# Compile of Adder.v was successful.
+# Compile of Register.v was successful.
+# Compile of MUX2to1.v was successful.
+# Compile of MUX4to1.v was successful.
+# Compile of InstructionMemory.v was successful.
+# Compile of Top.v was successful.
+# Compile of TB.v was successful.
+# Compile of register_file.v was successful.
+# Compile of control_unit.v was successful.
+# Compile of condition_check.v was successful.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of ALU.v was successful.
+# Compile of val2_generator.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of hazard_unit.v was successful.
+# Compile of forwarding_unit.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TB
+# Loading work.Top
+# Loading work.StageIF
+# Loading work.MUX2to1
+# Loading work.Register
+# Loading work.InstructionMemory
+# Loading work.Adder
+# Loading work.RegIFID
+# Loading work.StageId
+# Loading work.ConditionCheck
+# Loading work.ControlUnit
+# Loading work.RegisterFile
+# Loading work.RegIDEX
+# Loading work.StageEx
+# Loading work.Val2Generator
+# Loading work.RegisterNegEdge
+# Loading work.ALU
+# Loading work.MUX4to1
+# Loading work.RegsExMem
+# Loading work.StageMem
+# Loading work.DataMemory
+# Loading work.RegsMemWb
+# Loading work.HazardUnit
+# Loading work.ForwardingUnit
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : F:/University_terms/term 9/CALab/Projects/ARM/TB.v(16)
+#    Time: 100100 ns  Iteration: 0  Instance: /TB
+# Break in Module TB at F:/University_terms/term 9/CALab/Projects/ARM/TB.v line 16

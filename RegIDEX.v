@@ -8,6 +8,7 @@ module RegIDEX(
     input [11:0] shiftOperandIn,
     input signed [23:0] imm24In,
     input [3:0] destIn,
+    input [3:0] src1In, src2In,
     input flush,
     output [31:0] pcOut,
     output [3:0] aluCmdOut,
@@ -16,7 +17,9 @@ module RegIDEX(
     output immOut,
     output [11:0] shiftOperandOut,
     output signed [23:0] imm24Out,
-    output [3:0] destOut
+    output [3:0] destOut,
+    output [3:0] src1Out, src2Out
+
 );
     Register #(32) pcReg(
         .clk(clk), .rst(rst),
@@ -90,6 +93,18 @@ module RegIDEX(
         .clk(clk), .rst(rst),
         .in(destIn), .ld(1'b1), .clr(flush),
         .out(destOut)
+    );
+    
+    Register #(4) src1Reg(
+        .clk(clk), .rst(rst),
+        .in(src1In), .ld(1'b1), .clr(flush),
+        .out(src1Out)
+    );
+
+     Register #(4) src2Reg(
+        .clk(clk), .rst(rst),
+        .in(src2In), .ld(1'b1), .clr(flush),
+        .out(src2Out)
     );
 
 endmodule

@@ -1,10 +1,11 @@
 `timescale 1ns/1ns
 module TB();
-    reg clk = 1'b0, rst = 1'b0;
+    reg clk = 1'b0, rst = 1'b0, forwardEn = 1'b1;
 
     Top top(
         .clk(clk),
-        .rst(rst)
+        .rst(rst),
+        .forwardingEn(forwardEn)
     );
 
     initial begin

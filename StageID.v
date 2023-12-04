@@ -19,6 +19,7 @@ module StageId(
     output [11:0] shiftOperand,
     output signed [23:0] imm24,
     output [3:0] dest,
+    output [3:0] src1, src2,
     // To Hazard
     output hazardTwoSrc, 
     output [3:0] hazardRn, hazardRdm
@@ -33,10 +34,12 @@ module StageId(
     assign shiftOperand = inst[11:0];
     assign imm24 = inst[23:0];
     assign dest = inst[15:12];
+    assign src1 = inst[19:16];
     assign rn = inst[19:16];
     assign hazardRn = rn;
     assign hazardRdm = regfile2Inp;
-  
+    assign src2 = regfile2Inp;
+
     assign hazardTwoSrc = ~imm | memWriteCU;
     assign condFinal = ~cond | hazard;
 
