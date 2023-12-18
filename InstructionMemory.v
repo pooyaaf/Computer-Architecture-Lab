@@ -51,8 +51,6 @@ module InstructionMemory(
     assign instMem[43] = 32'b1110_01_0_0100_1_0000_0100_000000001100;
     assign instMem[44] = 32'b1110_01_0_0100_1_0000_0101_000000010000;
     assign instMem[45] = 32'b1110_01_0_0100_1_0000_0110_000000010100;
-    assign instMem[46] = 32'b1110_10_1_0_111111111111111111111111;
-
 
     assign inst = instMem[pc >> 2];
 endmodule

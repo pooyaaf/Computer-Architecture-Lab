@@ -1,6 +1,13 @@
 module Top(
     input clk, rst,
-    input forwardingEn
+    input forwardingEn,
+    inout [15:0] SRAM_DQ,
+    output [17:0] SRAM_ADDR,
+    output SRAM_UB_N,
+    output SRAM_LB_N,
+    output SRAM_WE_N,
+    output SRAM_CE_N,
+    output SRAM_OE_N
 );
     wire [31:0] pcOutIf,instOutIF,pcOutIfPipe,instOutIfpipe;
    
@@ -37,6 +44,7 @@ module Top(
     wire [3:0] destOutExMem;
     // Memory
     wire wbEnOutMem, memREnOutMem;
+    wire ramFreeze;
     wire [31:0] aluResOutMem, memOutMem;
     wire [3:0] destOutMem;
     // MEM-WB
@@ -53,7 +61,7 @@ module Top(
     StageIF IF(
         .clk(clk),
         .rst(rst),
-        .freeze(hazard),
+        .freeze(hazard  | ramFreeze),
         .branchTaken(branchTakenEX),
         .branchAddr(branchAddrEX),
         .pc(pcOutIf),
@@ -63,7 +71,7 @@ module Top(
     RegIFID regIFID(
         .clk(clk),
         .rst(rst),
-        .freeze(hazard),
+        .freeze(hazard  | ramFreeze),
         .flush(branchTakenEX),
         .pcIn(pcOutIf),
         .instructionIn(instOutIF),
@@ -120,6 +128,7 @@ module Top(
         .src1In(src1OutId), 
         .src2In(src2OutId),
         .flush(branchTakenEX), 
+        .freeze(ramFreeze),
         .pcOut(pcOutIdEx),
         .aluCmdOut(aluCmdOutIdEx), 
         .memReadOut(memReadOutIdEx), 
@@ -178,6 +187,7 @@ module Top(
         .aluResIn(aluResOutEx),
         .valRmIn(reg2OutEx),
         .destIn(destOutEx),
+        .freeze(ramFreeze),
         .wbEnOut(wbEnOutExMem),
         .memREnOut(memReadOutExMem),
         .memWEnOut(memWriteOutExMem),
@@ -199,7 +209,15 @@ module Top(
         .memREnOut(memREnOutMem),
         .aluResOut(aluResOutMem),
         .memOut(memOutMem),
-        .destOut(destOutMem)
+        .destOut(destOutMem),
+        .freeze(ramFreeze),
+        .SRAM_ADDR(SRAM_ADDR),
+        .SRAM_DQ(SRAM_DQ),
+        .SRAM_UB_N(SRAM_UB_N),
+        .SRAM_LB_N(SRAM_LB_N),
+        .SRAM_WE_N(SRAM_WE_N),
+        .SRAM_CE_N(SRAM_CE_N),
+        .SRAM_OE_N(SRAM_DE_N)
     );
 
     RegsMemWb regsMemWb(
@@ -210,6 +228,7 @@ module Top(
         .aluResIn(aluResOutMem),
         .memDataIn(memOutMem),
         .destIn(destOutMem),
+        .freeze(ramFreeze),
         .wbEnOut(wbEnOutMemWb),
         .memREnOut(memREnOutMemWb),
         .aluResOut(aluResOutMemWb),

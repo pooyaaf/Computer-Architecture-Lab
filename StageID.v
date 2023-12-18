@@ -42,7 +42,7 @@ module StageId(
 
     assign hazardTwoSrc = ~imm | memWriteCU;
     assign condFinal = ~cond | hazard;
-
+    
     ConditionCheck cc(
         .cond(inst[31:28]),
         .status(status),

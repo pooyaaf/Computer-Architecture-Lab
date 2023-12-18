@@ -2,7 +2,7 @@
 module ControlUnit(
     input [1:0] mode,
     input [3:0] opcode,
-    input sIn,
+    input sIn, 
 
     output reg [3:0] aluCmd,
     output reg memRead, memWrite,
@@ -33,7 +33,8 @@ module ControlUnit(
             2'b00: begin
                 sOut = sIn;
                 // no write-back for CMP and TST
-                wbEn = (opcode == 4'b1010 || opcode == 4'b1000) ? 1'b0 : 1'b1;
+                // compare
+                wbEn = (opcode == 4'b1010 || opcode == 4'b1000 || opcode == 4'b0011) ? 1'b0 : 1'b1;
 
             end
             2'b01: begin
