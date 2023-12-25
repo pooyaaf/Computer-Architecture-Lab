@@ -15,7 +15,9 @@ module StageMem(
     output SRAM_CE_N,
     output SRAM_OE_N
 );
-
+    wire sramReady,
+    wire [63:0] sramReadData,
+    wire sramWrEn, sramRdEn
     assign memREnOut = memREnIn;
     assign aluResOut = aluResIn;
     assign destOut = destIn;
@@ -26,12 +28,12 @@ module StageMem(
     SramController sramcontroller(
         .clk(clk), 
         .rst(rst),
-        .wrEn(memWEnIn),
-        .rdEn(memREnIn),
+        .wrEn(sramWrEn),
+        .rdEn(sramRdEn),
         .address(aluResIn),
         .writeData(valRm),
-        .readData(memOut),
-        .ready(ready),
+        .readData(sramReadData),
+        .ready(sramReady),
         .SRAM_DQ(SRAM_DQ),
         .SRAM_ADDR(SRAM_ADDR),
         .SRAM_UB_N(SRAM_UB_N),
@@ -39,6 +41,21 @@ module StageMem(
         .SRAM_WE_N(SRAM_WE_N),
         .SRAM_CE_N(SRAM_CE_N),
         .SRAM_OE_N(SRAM_OE_N)
+    );
+    
+    CacheController cacheController(
+        .clk(clk), 
+        .rst(rst),
+        .rdEn(memREnIn), 
+        .wrEn(memWEnIn),
+        .address(aluResIn),
+        .writeData(valRm),
+        .readData(memOut),
+        .ready(ready),
+        .sramReady(sramReady),
+        .sramReadData(sramReadData),
+        .sramWrEn(sramWrEn), 
+        .sramRdEn(sramRdEn)
     );
 
     // DataMemory mem(
@@ -50,11 +67,11 @@ module StageMem(
     //     .memWrite(memWEnIn),
     //     .readData(memOut)
     // );
+
     MUX2to1 #(1) ramWbEn(
         .input1(wbEnIn),
         .input2(1'b0),
         .sel(freeze),
         .out(wbEnOut)
     );
-
 endmodule

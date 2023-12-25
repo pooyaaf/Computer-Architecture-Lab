@@ -21,11 +21,11 @@ module HazardUnit(
                     hazard = 1'b1;
                 end
             end
-        if (wbEnMem) begin
-            if (rn == destMem || (twoSrc && rdm == destMem)) begin
-                hazard = 1'b1;
+            if (wbEnMem) begin
+                if (rn == destMem || (twoSrc && rdm == destMem)) begin
+                    hazard = 1'b1;
+                end
             end
-        end
         end
     end
 endmodule
