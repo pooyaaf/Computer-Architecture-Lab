@@ -55,7 +55,7 @@ module CacheController(
     assign hitData = hit ? cacheHitData :
                        sramReady ? (offset[2] == 1'b0 ? sramReadData[31:0] : sramReadData[63:32]) : 32'bz;
     assign readData = rdEn ? hitData : 32'bz;
-    assign ready = sramReady | hit; // or with hit???
+    assign ready = sramReady | (rdEn & hit); // or with hit???
 
     // Sram Controller
     assign sramRdEn = ~hit & rdEn;
@@ -99,7 +99,7 @@ module CacheController(
         if (rst) begin
             way0Valid = 64'd0;
             way1Valid = 64'd0;
-            // indexLru = 64'd0;
+            indexLru = 64'd0;
         end
     end
 endmodule

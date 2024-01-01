@@ -15,9 +15,9 @@ module StageMem(
     output SRAM_CE_N,
     output SRAM_OE_N
 );
-    wire sramReady,
-    wire [63:0] sramReadData,
-    wire sramWrEn, sramRdEn
+    wire sramReady;
+    wire [63:0] sramReadData;
+    wire sramWrEn, sramRdEn;
     assign memREnOut = memREnIn;
     assign aluResOut = aluResIn;
     assign destOut = destIn;
